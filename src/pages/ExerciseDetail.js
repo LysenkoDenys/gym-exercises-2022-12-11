@@ -5,8 +5,8 @@ import { Box } from "@mui/material";
 import Detail from "../components/Detail";
 import ExerciseVideos from "../components/ExerciseVideos";
 import SimilarExercises from "../components/SimilarExercises";
-
 import { exerciseOptions, fetchData, youtubeOptions } from "../utils/fetchData";
+
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
