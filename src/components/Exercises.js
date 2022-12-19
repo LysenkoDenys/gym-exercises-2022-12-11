@@ -1,9 +1,10 @@
-import { Pagination } from "@mui/material";
 import { useState, useEffect } from "react";
+import { Pagination } from "@mui/material";
 import { Box, Stack, Typography } from "@mui/material";
-import ExerciseCard from "./ExerciseCard";
 
+import ExerciseCard from "./ExerciseCard";
 import { exerciseOptions, fetchData } from "../utils/fetchData";
+import Loader from "./Loader";
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
